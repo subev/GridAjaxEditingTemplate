@@ -32,12 +32,16 @@ namespace KendoMVCWrappers.Controllers
             return Json(result);
         }
 
-        public ActionResult UpdatePerson([DataSourceRequest] DataSourceRequest dsRequest, Person person)
+        public ActionResult UpdatePerson([DataSourceRequest] DataSourceRequest dsRequest, [Bind(Prefix="models")]List<Person> updated)
         {
-            if (person != null && ModelState.IsValid)
+            if (people != null && ModelState.IsValid)
             {
-                var toUpdate = people.FirstOrDefault(p => p.PersonID == person.PersonID);
-                TryUpdateModel(toUpdate);
+                foreach (var person in updated)
+                {
+                    var toUpdate = people.FirstOrDefault(p => p.PersonID == person.PersonID);
+                    toUpdate.Name = person.Name;
+                    toUpdate.BirthDate = person.BirthDate;
+                }
             }
 
             return Json(new Person[] { person }.ToDataSourceResult(dsRequest, ModelState));
