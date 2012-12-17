@@ -2,11 +2,11 @@
     ViewBag.Title = "Home Page";
 }
 
-@(Html.Kendo().Grid<KendoMVCWrappers.Models.Person>().Name("persons")
+@(Html.Kendo().Grid<KendoMVCWrappers.Models.Person>().Name("people")
             .DataSource(dataSource => dataSource
                 .Ajax()
                 .Model(model=>model.Id(m=>m.PersonID))
-                    .Read(read => read.Action("GetPersons","Home"))
+                    .Read(read => read.Action("GetPeople","Home"))
                     .Update(up=>up.Action("UpdatePerson","Home"))
             )
             

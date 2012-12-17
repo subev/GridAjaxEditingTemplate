@@ -11,12 +11,12 @@ namespace KendoMVCWrappers.Controllers
 {
     public class HomeController : Controller
     {
-        public static List<Person> persons = new List<Person>();
+        public static List<Person> people = new List<Person>();
 
         static HomeController()
         {
-            persons.Add(new Person { PersonID = 1, Name = "John", BirthDate = new DateTime(1968, 6, 26) });
-            persons.Add(new Person { PersonID = 2, Name = "Sara", BirthDate = new DateTime(1974, 9, 13) });
+            people.Add(new Person { PersonID = 1, Name = "John", BirthDate = new DateTime(1968, 6, 26) });
+            people.Add(new Person { PersonID = 2, Name = "Sara", BirthDate = new DateTime(1974, 9, 13) });
         }
 
         public ActionResult Index()
@@ -26,9 +26,9 @@ namespace KendoMVCWrappers.Controllers
             return View();
         }
 
-        public ActionResult GetPersons([DataSourceRequest] DataSourceRequest dsRequest)
+        public ActionResult GetPeople([DataSourceRequest] DataSourceRequest dsRequest)
         {
-            var result = persons.ToDataSourceResult(dsRequest);
+            var result = people.ToDataSourceResult(dsRequest);
             return Json(result);
         }
 
@@ -36,7 +36,7 @@ namespace KendoMVCWrappers.Controllers
         {
             if (person != null && ModelState.IsValid)
             {
-                var toUpdate = persons.FirstOrDefault(p => p.PersonID == person.PersonID);
+                var toUpdate = people.FirstOrDefault(p => p.PersonID == person.PersonID);
                 TryUpdateModel(toUpdate);
             }
 
