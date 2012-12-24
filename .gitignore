@@ -1,0 +1,4 @@
+*.suo
+*.zip
+bin/
+obj/
