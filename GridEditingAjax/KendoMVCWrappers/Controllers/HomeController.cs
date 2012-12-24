@@ -40,7 +40,6 @@ namespace KendoMVCWrappers.Controllers
                 TryUpdateModel(toUpdate);
             }
 
-
             return Json(ModelState.ToDataSourceResult());
         }
 
