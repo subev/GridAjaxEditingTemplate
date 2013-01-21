@@ -802,6 +802,42 @@
             Specifies the date category axis base unit.
             </summary>
         </member>
+        <member name="P:Kendo.Mvc.UI.ChartCategoryAxis`1.BaseUnitStep">
+            <summary>
+            Sets the step (interval) between categories in base units.
+            </summary>
+        </member>
+        <member name="P:Kendo.Mvc.UI.ChartCategoryAxis`1.MaxDateGroups">
+            <summary>
+            Specifies the maximum number of groups (categories) to produce when
+            either BaseUnit is set to Fit or BaseUnitStep is set to 0 (auto).
+            This option is ignored in all other cases.
+            </summary>
+        </member>
+        <member name="P:Kendo.Mvc.UI.ChartCategoryAxis`1.RoundToBaseUnit">
+            <summary>
+            If set to false, the min and max dates will not be rounded off to
+            the nearest baseUnit.
+            This option is most useful in combination with explicit min and max dates.
+            It will be ignored if either Bar, Column, OHLC or Candlestick series are plotted on the axis.
+            </summary>
+            <value>
+            A boolean value that indicates if the axis range should be rounded to the nearest base unit.
+            The default value is true.
+            </value>
+        </member>
+        <member name="P:Kendo.Mvc.UI.ChartCategoryAxis`1.Justified">
+            <summary>
+            Positions categories and series points on major ticks. This removes the empty space before and after the series.
+            This option will be ignored if either Bar, Column, OHLC or Candlestick series are plotted on the axis.
+            </summary>
+        </member>
+        <member name="P:Kendo.Mvc.UI.ChartCategoryAxis`1.AutoBaseUnitSteps">
+            <summary>
+            Specifies the discrete BaseUnitStep values
+            when either BaseUnit is set to Fit or BaseUnitStep is set to 0 (auto).
+            </summary>
+        </member>
         <member name="P:Kendo.Mvc.UI.ChartCategoryAxis`1.Min">
             <summary>
             Specifies the date category axis minimum (start) date.
@@ -1065,9 +1101,19 @@
             Date format to use when the base date unit is <see cref="F:Kendo.Mvc.UI.ChartAxisBaseUnit.Days" />.
             </summary>
         </member>
+        <member name="P:Kendo.Mvc.UI.ChartAxisLabelsDateFormats.Minutes">
+            <summary>
+            Date format to use when the base date unit is <see cref="F:Kendo.Mvc.UI.ChartAxisBaseUnit.Minutes" />.
+            </summary>
+        </member>
         <member name="P:Kendo.Mvc.UI.ChartAxisLabelsDateFormats.Months">
             <summary>
             Date format to use when the base date unit is <see cref="F:Kendo.Mvc.UI.ChartAxisBaseUnit.Months" />.
+            </summary>
+        </member>
+        <member name="P:Kendo.Mvc.UI.ChartAxisLabelsDateFormats.Weeks">
+            <summary>
+            Date format to use when the base date unit is <see cref="F:Kendo.Mvc.UI.ChartAxisBaseUnit.Weeks" />.
             </summary>
         </member>
         <member name="P:Kendo.Mvc.UI.ChartAxisLabelsDateFormats.Years">
@@ -1110,6 +1156,42 @@
             <summary>
             The interval between minor divisions in base units.
             It defaults to 1/5th of the majorUnit.
+            </summary>
+        </member>
+        <member name="P:Kendo.Mvc.UI.ChartAxisBaseUnitSteps.Minutes">
+            <summary>
+            The discrete baseUnitStep values when baseUnit is set to Minutes and
+            baseUnitStep is set to Auto.
+            </summary>
+        </member>
+        <member name="P:Kendo.Mvc.UI.ChartAxisBaseUnitSteps.Hours">
+            <summary>
+            The discrete baseUnitStep values when baseUnit is set to Hours and
+            baseUnitStep is set to Auto.
+            </summary>
+        </member>
+        <member name="P:Kendo.Mvc.UI.ChartAxisBaseUnitSteps.Days">
+            <summary>
+            The discrete baseUnitStep values when baseUnit is set to Minutes and
+            baseUnitStep is set to Auto.
+            </summary>
+        </member>
+        <member name="P:Kendo.Mvc.UI.ChartAxisBaseUnitSteps.Weeks">
+            <summary>
+            The discrete baseUnitStep values when baseUnit is set to Weeks and
+            baseUnitStep is set to Auto.
+            </summary>
+        </member>
+        <member name="P:Kendo.Mvc.UI.ChartAxisBaseUnitSteps.Months">
+            <summary>
+            The discrete baseUnitStep values when baseUnit is set to Months and
+            baseUnitStep is set to Auto.
+            </summary>
+        </member>
+        <member name="P:Kendo.Mvc.UI.ChartAxisBaseUnitSteps.Years">
+            <summary>
+            The discrete baseUnitStep values when baseUnit is set to Years and
+            baseUnitStep is set to Auto.
             </summary>
         </member>
         <member name="P:Kendo.Mvc.UI.IChartAxis`1.PlotBands">
@@ -1263,6 +1345,38 @@
             Specifies the date category axis base unit.
             </summary>
         </member>
+        <member name="P:Kendo.Mvc.UI.IChartCategoryAxis.BaseUnitStep">
+            <summary>
+            Sets the step (interval) between categories in base units.
+            </summary>
+        </member>
+        <member name="P:Kendo.Mvc.UI.IChartCategoryAxis.MaxDateGroups">
+            <summary>
+            Specifies the maximum number of groups (categories) to produce when
+            either BaseUnit is set to Fit or BaseUnitStep is set to 0 (auto).
+            This option is ignored in all other cases.
+            </summary>
+        </member>
+        <member name="P:Kendo.Mvc.UI.IChartCategoryAxis.RoundToBaseUnit">
+            <summary>
+            If set to false, the min and max dates will not be rounded off to
+            the nearest baseUnit.
+            This option is most useful in combination with explicit min and max dates.
+            It will be ignored if either Bar, Column, OHLC or Candlestick series are plotted on the axis.
+            </summary>
+        </member>
+        <member name="P:Kendo.Mvc.UI.IChartCategoryAxis.Justified">
+            <summary>
+            Positions categories and series points on major ticks. This removes the empty space before and after the series.
+            This option will be ignored if either Bar, Column, OHLC or Candlestick series are plotted on the axis.
+            </summary>
+        </member>
+        <member name="P:Kendo.Mvc.UI.IChartCategoryAxis.AutoBaseUnitSteps">
+            <summary>
+            Specifies the discrete BaseUnitStep values
+            when either BaseUnit is set to Fit or BaseUnitStep is set to 0 (auto).
+            </summary>
+        </member>
         <member name="P:Kendo.Mvc.UI.IChartCategoryAxis.Min">
             <summary>
             Specifies the date category axis minimum (start) date.
@@ -1348,9 +1462,9 @@
             Gets the default settings for all series.
             </summary>
         </member>
-        <member name="P:Kendo.Mvc.UI.Chart`1.CategoryAxis">
+        <member name="P:Kendo.Mvc.UI.Chart`1.CategoryAxes">
             <summary>
-            Configuration for the default category axis (if any)
+            Configuration for all category axes
             </summary>
         </member>
         <member name="P:Kendo.Mvc.UI.Chart`1.ValueAxes">
@@ -1763,11 +1877,10 @@
             <summary>
             Creates panes for the <see cref="!:Chart{TModel}" />.
             </summary>
-            <typeparam name="TModel">The type of the data item to which the chart is bound to</typeparam>
         </member>
         <member name="M:Kendo.Mvc.UI.Fluent.ChartPanesFactory.#ctor(Kendo.Mvc.UI.IChart)">
             <summary>
-            Initializes a new instance of the <see cref="!:ChartPanesFactory{TModel}" /> class.
+            Initializes a new instance of the <see cref="T:Kendo.Mvc.UI.Fluent.ChartPanesFactory" /> class.
             </summary>
             <param name="container">The container.</param>
         </member>
@@ -1798,7 +1911,7 @@
             <summary>
             Initializes a new instance of the <see cref="T:Kendo.Mvc.UI.Fluent.ChartPaneBuilder" /> class.
             </summary>
-            <param name="Pane">The Chart Pane.</param>
+            <param name="pane">The phart pane.</param>
         </member>
         <member name="P:Kendo.Mvc.UI.Fluent.ChartPaneBuilder.Pane">
             <summary>
@@ -1867,6 +1980,305 @@
             <param name="width">The pane border width.</param>
             <param name="color">The pane border color.</param>
             <param name="dashType">The pane dash type.</param>
+        </member>
+        <member name="M:Kendo.Mvc.UI.Fluent.ChartPaneBuilder.Border(System.Action{Kendo.Mvc.UI.Fluent.ChartBorderBuilder})">
+            <summary>
+            Configures the pane border
+            </summary>
+            <param name="configurator">The border configuration action</param>
+        </member>
+        <member name="T:Kendo.Mvc.UI.Fluent.ChartAxisBaseUnitStepsBuilder">
+            <summary>
+            Defines the fluent interface for configuring <see cref="T:Kendo.Mvc.UI.Fluent.ChartAxisBaseUnitStepsBuilder" />.
+            </summary>
+        </member>
+        <member name="M:Kendo.Mvc.UI.Fluent.ChartAxisBaseUnitStepsBuilder.#ctor(Kendo.Mvc.UI.ChartAxisBaseUnitSteps)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Kendo.Mvc.UI.Fluent.ChartAxisBaseUnitStepsBuilder" /> class.
+            </summary>
+            <param name="baseUnitSteps">The axis base unit steps.</param>
+        </member>
+        <member name="M:Kendo.Mvc.UI.Fluent.ChartAxisBaseUnitStepsBuilder.Minutes(System.Int32[])">
+            <summary>
+            The discrete BaseUnitStep values when BaseUnit is set to Minutes and
+            BaseUnitStep is set to 0 (auto).
+            </summary>
+            <param name="steps">The discrete steps when BaseUnit is set to Minutes.</param>
+            <example>
+                <code lang="CS">
+            &lt;% Html.Kendo().Chart()
+            .Name("chart")
+            .Title("Units sold")
+            .Series(series =&gt; {
+            series
+            .Column(new int[] { 20, 40, 45, 30, 50 });
+            })
+            .CategoryAxis(axis =&gt; axis
+            .Date()
+            .BaseUnit(ChartAxisBaseUnit.Fit)
+            .AutoBaseUnitSteps(steps =&gt; steps.Minutes(1, 2))
+            )
+            %&gt;
+            </code>
+            </example>
+        </member>
+        <member name="M:Kendo.Mvc.UI.Fluent.ChartAxisBaseUnitStepsBuilder.Hours(System.Int32[])">
+            <summary>
+            The discrete BaseUnitStep values when BaseUnit is set to Hours and
+            BaseUnitStep is set to 0 (auto).
+            </summary>
+            <param name="steps">The discrete steps when BaseUnit is set to Hours.</param>
+            <example>
+                <code lang="CS">
+            &lt;% Html.Kendo().Chart()
+            .Name("chart")
+            .Title("Units sold")
+            .Series(series =&gt; {
+            series
+            .Column(new int[] { 20, 40, 45, 30, 50 });
+            })
+            .CategoryAxis(axis =&gt; axis
+            .Date()
+            .BaseUnit(ChartAxisBaseUnit.Fit)
+            .AutoBaseUnitSteps(steps =&gt; steps.Hours(1, 2))
+            )
+            %&gt;
+            </code>
+            </example>
+        </member>
+        <member name="M:Kendo.Mvc.UI.Fluent.ChartAxisBaseUnitStepsBuilder.Days(System.Int32[])">
+            <summary>
+            The discrete BaseUnitStep values when BaseUnit is set to Days and
+            BaseUnitStep is set to 0 (auto).
+            </summary>
+            <param name="steps">The discrete steps when BaseUnit is set to Days.</param>
+            <example>
+                <code lang="CS">
+            &lt;% Html.Kendo().Chart()
+            .Name("chart")
+            .Title("Units sold")
+            .Series(series =&gt; {
+            series
+            .Column(new int[] { 20, 40, 45, 30, 50 });
+            })
+            .CategoryAxis(axis =&gt; axis
+            .Date()
+            .BaseUnit(ChartAxisBaseUnit.Fit)
+            .AutoBaseUnitSteps(steps =&gt; steps.Days(1, 2))
+            )
+            %&gt;
+            </code>
+            </example>
+        </member>
+        <member name="M:Kendo.Mvc.UI.Fluent.ChartAxisBaseUnitStepsBuilder.Weeks(System.Int32[])">
+            <summary>
+            The discrete BaseUnitStep values when BaseUnit is set to Weeks and
+            BaseUnitStep is set to 0 (auto).
+            </summary>
+            <param name="steps">The discrete steps when BaseUnit is set to Weeks.</param>
+            <example>
+                <code lang="CS">
+            &lt;% Html.Kendo().Chart()
+            .Name("chart")
+            .Title("Units sold")
+            .Series(series =&gt; {
+            series
+            .Column(new int[] { 20, 40, 45, 30, 50 });
+            })
+            .CategoryAxis(axis =&gt; axis
+            .Date()
+            .BaseUnit(ChartAxisBaseUnit.Fit)
+            .AutoBaseUnitSteps(steps =&gt; steps.Weeks(1, 2))
+            )
+            %&gt;
+            </code>
+            </example>
+        </member>
+        <member name="M:Kendo.Mvc.UI.Fluent.ChartAxisBaseUnitStepsBuilder.Months(System.Int32[])">
+            <summary>
+            The discrete BaseUnitStep values when BaseUnit is set to Months and
+            BaseUnitStep is set to 0 (auto).
+            </summary>
+            <param name="steps">The discrete steps when BaseUnit is set to Months.</param>
+            <example>
+                <code lang="CS">
+            &lt;% Html.Kendo().Chart()
+            .Name("chart")
+            .Title("Units sold")
+            .Series(series =&gt; {
+            series
+            .Column(new int[] { 20, 40, 45, 30, 50 });
+            })
+            .CategoryAxis(axis =&gt; axis
+            .Date()
+            .BaseUnit(ChartAxisBaseUnit.Fit)
+            .AutoBaseUnitSteps(steps =&gt; steps.Months(1, 2))
+            )
+            %&gt;
+            </code>
+            </example>
+        </member>
+        <member name="M:Kendo.Mvc.UI.Fluent.ChartAxisBaseUnitStepsBuilder.Years(System.Int32[])">
+            <summary>
+            The discrete BaseUnitStep values when BaseUnit is set to Years and
+            BaseUnitStep is set to 0 (auto).
+            </summary>
+            <param name="steps">The discrete steps when BaseUnit is set to Years.</param>
+            <example>
+                <code lang="CS">
+            &lt;% Html.Kendo().Chart()
+            .Name("chart")
+            .Title("Units sold")
+            .Series(series =&gt; {
+            series
+            .Column(new int[] { 20, 40, 45, 30, 50 });
+            })
+            .CategoryAxis(axis =&gt; axis
+            .Date()
+            .BaseUnit(ChartAxisBaseUnit.Fit)
+            .AutoBaseUnitSteps(steps =&gt; steps.Years(1, 2))
+            )
+            %&gt;
+            </code>
+            </example>
+        </member>
+        <member name="T:Kendo.Mvc.UI.Fluent.ChartBubbleSeriesHighlightBuilder">
+            <summary>
+            Defines the fluent interface for configuring bubble series highlight.
+            </summary>
+        </member>
+        <member name="M:Kendo.Mvc.UI.Fluent.ChartBubbleSeriesHighlightBuilder.#ctor(Kendo.Mvc.UI.ChartSeriesHighlight)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Kendo.Mvc.UI.Fluent.ChartBubbleSeriesHighlightBuilder" /> class.
+            </summary>
+            <param name="highlight">The series highlight.</param>
+        </member>
+        <member name="T:Kendo.Mvc.UI.Fluent.ChartSeriesHighlightBuilderBase">
+            <summary>
+            Defines the fluent interface for configuring series highlight.
+            </summary>
+        </member>
+        <member name="M:Kendo.Mvc.UI.Fluent.ChartSeriesHighlightBuilderBase.#ctor(Kendo.Mvc.UI.ChartSeriesHighlight)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Kendo.Mvc.UI.Fluent.ChartSeriesHighlightBuilderBase" /> class.
+            </summary>
+            <param name="highlight">The series highlight.</param>
+        </member>
+        <member name="P:Kendo.Mvc.UI.Fluent.ChartSeriesHighlightBuilderBase.Highlight">
+            <summary>
+            Gets or sets the highlight
+            </summary>
+        </member>
+        <member name="M:Kendo.Mvc.UI.Fluent.ChartSeriesHighlightBuilderBase.Border(System.Int32)">
+            <summary>
+            Sets the bubble highlight border width.
+            The color is computed automatically from the base point color.
+            </summary>
+            <param name="width">The bubble highlight border width.</param>
+        </member>
+        <member name="M:Kendo.Mvc.UI.Fluent.ChartSeriesHighlightBuilderBase.Border(System.Int32,System.String)">
+            <summary>
+            Sets the bubble highlight border width.
+            </summary>
+            <param name="width">The border width.</param>
+            <param name="color">The border color</param>
+        </member>
+        <member name="M:Kendo.Mvc.UI.Fluent.ChartSeriesHighlightBuilderBase.Border(System.Action{Kendo.Mvc.UI.Fluent.ChartBorderBuilder})">
+            <summary>
+            Configures the highlight border
+            </summary>
+            <param name="configurator">
+            </param>
+            <returns>
+            </returns>
+        </member>
+        <member name="M:Kendo.Mvc.UI.Fluent.ChartSeriesHighlightBuilderBase.Opacity(System.Double)">
+            <summary>
+            Sets the bubble highlight opacity.
+            </summary>
+            <param name="opacity">The bubble highlight opacity.</param>
+        </member>
+        <member name="T:Kendo.Mvc.UI.Fluent.ChartPieSeriesHighlightBuilder">
+            <summary>
+            Defines the fluent interface for configuring pie series highlight.
+            </summary>
+        </member>
+        <member name="M:Kendo.Mvc.UI.Fluent.ChartPieSeriesHighlightBuilder.#ctor(Kendo.Mvc.UI.ChartSeriesHighlight)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Kendo.Mvc.UI.Fluent.ChartPieSeriesHighlightBuilder" /> class.
+            </summary>
+            <param name="highlight">The series highlight.</param>
+        </member>
+        <member name="M:Kendo.Mvc.UI.Fluent.ChartPieSeriesHighlightBuilder.Color(System.String)">
+            <summary>
+            Sets the pie highlight color.
+            </summary>
+            <param name="color">The highlight color</param>
+        </member>
+        <member name="T:Kendo.Mvc.UI.Fluent.ChartCandlestickSeriesHighlightBuilder">
+            <summary>
+            Defines the fluent interface for configuring candlestick series highlight.
+            </summary>
+        </member>
+        <member name="M:Kendo.Mvc.UI.Fluent.ChartCandlestickSeriesHighlightBuilder.#ctor(Kendo.Mvc.UI.ChartSeriesHighlight)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Kendo.Mvc.UI.Fluent.ChartCandlestickSeriesHighlightBuilder" /> class.
+            </summary>
+            <param name="highlight">The series highlight.</param>
+        </member>
+        <member name="M:Kendo.Mvc.UI.Fluent.ChartCandlestickSeriesHighlightBuilder.Line(System.Int32)">
+            <summary>
+            Configures the candlestick highlight line width.
+            </summary>
+            <param name="width">The lines width.</param>
+        </member>
+        <member name="M:Kendo.Mvc.UI.Fluent.ChartCandlestickSeriesHighlightBuilder.Line(System.Int32,System.String)">
+            <summary>
+            Configures the candlestick highlight lines.
+            </summary>
+            <param name="width">The lines width.</param>
+            <param name="color">The lines color.</param>
+        </member>
+        <member name="M:Kendo.Mvc.UI.Fluent.ChartCandlestickSeriesHighlightBuilder.Line(System.Action{Kendo.Mvc.UI.Fluent.ChartAreaLineBuilder})">
+            <summary>
+            Configures the candlestick highlight chart lines.
+            </summary>
+            <param name="configurator">The configuration action.</param>
+        </member>
+        <member name="T:Kendo.Mvc.UI.Fluent.ChartOHLCSeriesHighlightBuilder">
+            <summary>
+            Defines the fluent interface for configuring OHLC series highlight.
+            </summary>
+        </member>
+        <member name="M:Kendo.Mvc.UI.Fluent.ChartOHLCSeriesHighlightBuilder.#ctor(Kendo.Mvc.UI.ChartSeriesHighlight)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Kendo.Mvc.UI.Fluent.ChartOHLCSeriesHighlightBuilder" /> class.
+            </summary>
+            <param name="highlight">The series highlight.</param>
+        </member>
+        <member name="P:Kendo.Mvc.UI.Fluent.ChartOHLCSeriesHighlightBuilder.Highlight">
+            <summary>
+            Gets or sets the highlight
+            </summary>
+        </member>
+        <member name="M:Kendo.Mvc.UI.Fluent.ChartOHLCSeriesHighlightBuilder.Line(System.Int32)">
+            <summary>
+            Configures the candlestick highlight line width.
+            </summary>
+            <param name="width">The lines width.</param>
+        </member>
+        <member name="M:Kendo.Mvc.UI.Fluent.ChartOHLCSeriesHighlightBuilder.Line(System.Int32,System.String)">
+            <summary>
+            Configures the candlestick highlight lines.
+            </summary>
+            <param name="width">The lines width.</param>
+            <param name="color">The lines color.</param>
+        </member>
+        <member name="M:Kendo.Mvc.UI.Fluent.ChartOHLCSeriesHighlightBuilder.Line(System.Action{Kendo.Mvc.UI.Fluent.ChartAreaLineBuilder})">
+            <summary>
+            Configures the OHLC highlight chart lines.
+            </summary>
+            <param name="configurator">The configuration action.</param>
         </member>
         <member name="P:Kendo.Mvc.UI.ISeriesContainer.Series">
             <summary>
@@ -2295,14 +2707,30 @@
             Days.
             </summary>
         </member>
+        <member name="F:Kendo.Mvc.UI.ChartAxisBaseUnit.Minutes">
+            <summary>
+            Minutes.
+            </summary>
+        </member>
         <member name="F:Kendo.Mvc.UI.ChartAxisBaseUnit.Months">
             <summary>
             Months.
             </summary>
         </member>
+        <member name="F:Kendo.Mvc.UI.ChartAxisBaseUnit.Weeks">
+            <summary>
+            Weeks.
+            </summary>
+        </member>
         <member name="F:Kendo.Mvc.UI.ChartAxisBaseUnit.Years">
             <summary>
             Years.
+            </summary>
+        </member>
+        <member name="F:Kendo.Mvc.UI.ChartAxisBaseUnit.Fit">
+            <summary>
+            Automatic base unit based on limit set from MaxDataGroups.
+            Note that the BaseUnitStep setting will be disregarded.
             </summary>
         </member>
         <member name="T:Kendo.Mvc.UI.Fluent.ChartAxisDefaultsBuilder`1">
@@ -2602,6 +3030,12 @@
             </code>
             </example>
         </member>
+        <member name="M:Kendo.Mvc.UI.Fluent.ChartTooltipBuilder.Border(System.Action{Kendo.Mvc.UI.Fluent.ChartBorderBuilder})">
+            <summary>
+            Configures the tooltip border
+            </summary>
+            <param name="configurator">The border configuration action</param>
+        </member>
         <member name="M:Kendo.Mvc.UI.Fluent.ChartTooltipBuilder.Format(System.String)">
             <summary>
             Sets the tooltip format
@@ -2837,6 +3271,12 @@
             %&gt;
             </code>
             </example>
+        </member>
+        <member name="M:Kendo.Mvc.UI.Fluent.ChartPieSeriesBuilder`1.Highlight(System.Action{Kendo.Mvc.UI.Fluent.ChartPieSeriesHighlightBuilder})">
+            <summary>
+            Configures the pie highlight
+            </summary>
+            <param name="configurator">The configuration action.</param>
         </member>
         <member name="T:Kendo.Mvc.UI.Fluent.ChartScatterSeriesBuilder`1">
             <summary>
@@ -3429,6 +3869,12 @@
             </code>
             </example>
         </member>
+        <member name="M:Kendo.Mvc.UI.Fluent.ChartAxisTitleBuilder.Border(System.Action{Kendo.Mvc.UI.Fluent.ChartBorderBuilder})">
+            <summary>
+            Configures the title border
+            </summary>
+            <param name="configurator">The border configuration action</param>
+        </member>
         <member name="M:Kendo.Mvc.UI.Fluent.ChartAxisTitleBuilder.Opacity(System.Double)">
             <summary>
             Sets the axis title opacity.
@@ -3877,7 +4323,7 @@
             </summary>
             <typeparam name="TModel">The type of the data item to which the chart is bound to</typeparam>
         </member>
-        <member name="M:Kendo.Mvc.UI.Fluent.ChartDateCategoryAxisBuilder`1.#ctor(Kendo.Mvc.UI.Chart{`0})">
+        <member name="M:Kendo.Mvc.UI.Fluent.ChartDateCategoryAxisBuilder`1.#ctor(Kendo.Mvc.UI.Chart{`0},Kendo.Mvc.UI.IChartCategoryAxis)">
             <summary>
             Initializes a new instance of the <see cref="!:ChartCategoryAxisBuilder{TModel}" /> class.
             </summary>
@@ -3918,6 +4364,68 @@
             </summary>
             <param name="baseUnit">
             The date category axis base unit
+            </param>
+        </member>
+        <member name="M:Kendo.Mvc.UI.Fluent.ChartDateCategoryAxisBuilder`1.BaseUnitStep(System.Int32)">
+            <summary>
+            Sets the step (interval) between categories in base units.
+            Specifiying 0 (auto) will set the step to such value that the total
+            number of categories does not exceed MaxDateGroups.
+            </summary>
+            <remarks>
+            This option is ignored if baseUnit is set to "fit".
+            </remarks>
+            <param name="baseUnitStep">
+            the step (interval) between categories in base units.
+            Set 0 for automatic step. The default value is 1.
+            </param>
+        </member>
+        <member name="M:Kendo.Mvc.UI.Fluent.ChartDateCategoryAxisBuilder`1.MaxDateGroups(System.Int32)">
+            <summary>
+            Specifies the maximum number of groups (categories) that the chart will attempt to
+            produce when either BaseUnit is set to Fit or BaseUnitStep is set to 0 (auto).
+            This option is ignored in all other cases.
+            </summary>
+            <param name="maxDateGroups">
+            the maximum number of groups (categories).
+            The default value is 10.
+            </param>
+        </member>
+        <member name="M:Kendo.Mvc.UI.Fluent.ChartDateCategoryAxisBuilder`1.RoundToBaseUnit(System.Boolean)">
+            <summary>
+            If set to false, the min and max dates will not be rounded off to
+            the nearest baseUnit.
+            This option is most useful in combination with explicit min and max dates.
+            It will be ignored if either Bar, Column, OHLC or Candlestick series are plotted on the axis.
+            </summary>
+            <param name="roundToBaseUnit">
+            A boolean value that indicates if the axis range should be rounded to the nearest base unit.
+            The default value is true.
+            </param>
+        </member>
+        <member name="M:Kendo.Mvc.UI.Fluent.ChartDateCategoryAxisBuilder`1.Justify(System.Boolean)">
+            <summary>
+            Positions categories and series points on major ticks. This removes the empty space before and after the series.
+            This option will be ignored if either Bar, Column, OHLC or Candlestick series are plotted on the axis.
+            </summary>
+            <param name="justified">
+            A boolean value that indicates if the empty space before and after the series should be removed.
+            The default value is false.
+            </param>
+        </member>
+        <member name="M:Kendo.Mvc.UI.Fluent.ChartDateCategoryAxisBuilder`1.Justify">
+            <summary>
+            Positions categories and series points on major ticks. This removes the empty space before and after the series.
+            This option will be ignored if either Bar, Column, OHLC or Candlestick series are plotted on the axis.
+            </summary>
+        </member>
+        <member name="M:Kendo.Mvc.UI.Fluent.ChartDateCategoryAxisBuilder`1.AutoBaseUnitSteps(System.Action{Kendo.Mvc.UI.Fluent.ChartAxisBaseUnitStepsBuilder})">
+            <summary>
+            Specifies the discrete baseUnitStep values when
+            either BaseUnit is set to Fit or BaseUnitStep is set to 0 (auto).
+            </summary>
+            <param name="configurator">
+            The configuration action.
             </param>
         </member>
         <member name="M:Kendo.Mvc.UI.Fluent.ChartDateCategoryAxisBuilder`1.Min(System.DateTime)">
@@ -4096,7 +4604,27 @@
             .Date()
             .Labels(labels =&gt; labels
             .DateFormats(formats =&gt; formats
-            .Days("HH:mm")
+            .Days("dddd dd")
+            )
+            )
+            );
+            %&gt;
+            </code>
+            </example>
+        </member>
+        <member name="M:Kendo.Mvc.UI.Fluent.ChartAxisLabelsDateFormatsBuilder.Minutes(System.String)">
+            <summary>
+            Sets the date format when the base date unit is <see cref="F:Kendo.Mvc.UI.ChartAxisBaseUnit.Minutes" /></summary>
+            <param name="format">The date format.</param>
+            <example>
+                <code lang="CS">
+            &lt;%= Html.Kendo().Chart()
+            .Name("Chart")
+            .CategoryAxis(axis =&gt; axis
+            .Date()
+            .Labels(labels =&gt; labels
+            .DateFormats(formats =&gt; formats
+            .Minutes("ss")
             )
             )
             );
@@ -4116,7 +4644,27 @@
             .Date()
             .Labels(labels =&gt; labels
             .DateFormats(formats =&gt; formats
-            .Months("HH:mm")
+            .Months("MMMM MM")
+            )
+            )
+            );
+            %&gt;
+            </code>
+            </example>
+        </member>
+        <member name="M:Kendo.Mvc.UI.Fluent.ChartAxisLabelsDateFormatsBuilder.Weeks(System.String)">
+            <summary>
+            Sets the date format when the base date unit is <see cref="F:Kendo.Mvc.UI.ChartAxisBaseUnit.Months" /></summary>
+            <param name="format">The date format.</param>
+            <example>
+                <code lang="CS">
+            &lt;%= Html.Kendo().Chart()
+            .Name("Chart")
+            .CategoryAxis(axis =&gt; axis
+            .Date()
+            .Labels(labels =&gt; labels
+            .DateFormats(formats =&gt; formats
+            .Months("dddd")
             )
             )
             );
@@ -4136,7 +4684,7 @@
             .Date()
             .Labels(labels =&gt; labels
             .DateFormats(formats =&gt; formats
-            .Years("HH:mm")
+            .Years("yyyy")
             )
             )
             );
@@ -4409,6 +4957,12 @@
             Not applicable to bubble series
             </summary>
         </member>
+        <member name="M:Kendo.Mvc.UI.Fluent.ChartBubbleSeriesBuilder`1.Highlight(System.Action{Kendo.Mvc.UI.Fluent.ChartBubbleSeriesHighlightBuilder})">
+            <summary>
+            Configures the bubble highlight
+            </summary>
+            <param name="configurator">The configuration action.</param>
+        </member>
         <member name="T:Kendo.Mvc.UI.Fluent.ChartNegativeValueSettingsBuilder">
             <summary>
             Defines the fluent interface for configuring <see cref="T:Kendo.Mvc.UI.ChartNegativeValueSettings" />.
@@ -4562,6 +5116,19 @@
             </code>
             </example>
         </member>
+        <member name="M:Kendo.Mvc.UI.Fluent.ChartOHLCSeriesBuilder`1.Line(System.Int32)">
+            <summary>
+            Configures the ohlc line width.
+            </summary>
+            <param name="width">The lines width.</param>
+        </member>
+        <member name="M:Kendo.Mvc.UI.Fluent.ChartOHLCSeriesBuilder`1.Line(System.Int32,System.String)">
+            <summary>
+            Configures the ohlc lines.
+            </summary>
+            <param name="width">The lines width.</param>
+            <param name="color">The lines color.</param>
+        </member>
         <member name="M:Kendo.Mvc.UI.Fluent.ChartOHLCSeriesBuilder`1.Line(System.Action{Kendo.Mvc.UI.Fluent.ChartAreaLineBuilder})">
             <summary>
             Configures the ohlc chart lines.
@@ -4579,6 +5146,12 @@
             %&gt;
             </code>
             </example>
+        </member>
+        <member name="M:Kendo.Mvc.UI.Fluent.ChartOHLCSeriesBuilder`1.Highlight(System.Action{Kendo.Mvc.UI.Fluent.ChartOHLCSeriesHighlightBuilder})">
+            <summary>
+            Configures the series highlight
+            </summary>
+            <param name="configurator">The configuration action.</param>
         </member>
         <member name="T:Kendo.Mvc.UI.Fluent.ChartCandlestickSeriesBuilder`1">
             <summary>
@@ -4612,6 +5185,12 @@
             %&gt;
             </code>
             </example>
+        </member>
+        <member name="M:Kendo.Mvc.UI.Fluent.ChartCandlestickSeriesBuilder`1.Highlight(System.Action{Kendo.Mvc.UI.Fluent.ChartCandlestickSeriesHighlightBuilder})">
+            <summary>
+            Configures the series highlight
+            </summary>
+            <param name="configurator">The configuration action.</param>
         </member>
         <member name="M:Kendo.Mvc.UI.ChartMarkers.#ctor">
             <summary>
@@ -4929,6 +5508,12 @@
             </code>
             </example>
         </member>
+        <member name="M:Kendo.Mvc.UI.Fluent.ChartMarkersBuilder.Border(System.Action{Kendo.Mvc.UI.Fluent.ChartBorderBuilder})">
+            <summary>
+            Configures the markers border
+            </summary>
+            <param name="configurator">The border configuration action</param>
+        </member>
         <member name="M:Kendo.Mvc.UI.Fluent.ChartMarkersBuilder.Background(System.String)">
             <summary>
             The background color of the current series markers.
@@ -5024,6 +5609,12 @@
             %&gt;
             </code>
             </example>
+        </member>
+        <member name="M:Kendo.Mvc.UI.Fluent.PlotAreaBuilder.Border(System.Action{Kendo.Mvc.UI.Fluent.ChartBorderBuilder})">
+            <summary>
+            Configures the plot area border
+            </summary>
+            <param name="configurator">The border configuration action</param>
         </member>
         <member name="M:Kendo.Mvc.UI.PlotArea.#ctor">
             <summary>
@@ -5261,6 +5852,12 @@
             </code>
             </example>
         </member>
+        <member name="M:Kendo.Mvc.UI.Fluent.ChartLabelsBuilderBase`1.Border(System.Action{Kendo.Mvc.UI.Fluent.ChartBorderBuilder})">
+            <summary>
+            Configures the labels border
+            </summary>
+            <param name="configurator">The border configuration action</param>
+        </member>
         <member name="M:Kendo.Mvc.UI.Fluent.ChartLabelsBuilderBase`1.Format(System.String)">
             <summary>
             Sets the labels format.
@@ -5456,6 +6053,12 @@
             </code>
             </example>
         </member>
+        <member name="M:Kendo.Mvc.UI.Fluent.ChartAreaBuilder.Border(System.Action{Kendo.Mvc.UI.Fluent.ChartBorderBuilder})">
+            <summary>
+            Configures the plot area border
+            </summary>
+            <param name="configurator">The border configuration action</param>
+        </member>
         <member name="T:Kendo.Mvc.UI.Fluent.ChartLineBuilder">
             <summary>
             Defines the fluent interface for configuring <see cref="T:Kendo.Mvc.UI.ChartLine" />.
@@ -5626,6 +6229,22 @@
             </code>
             </example>
         </member>
+        <member name="M:Kendo.Mvc.UI.Fluent.ChartAxisBuilderBase`3.Name(System.String)">
+            <summary>
+            Sets the axis name.
+            </summary>
+            <param name="name">The axis name.</param>
+            <example>
+                <code lang="CS">
+            &lt;%= Html.Kendo().Chart(Model)
+            .Name("Chart")
+            .ValueAxis(axis =&gt; axis
+            .Name("axisName")
+            )
+            %&gt;
+            </code>
+            </example>
+        </member>
         <member name="M:Kendo.Mvc.UI.Fluent.ChartAxisBuilderBase`3.MinorTicks(System.Action{Kendo.Mvc.UI.Fluent.ChartAxisTicksBuilder})">
             <summary>
             Configures the minor ticks.
@@ -5703,6 +6322,7 @@
             </summary>
             <param name="color">The minor gridlines width</param>
             <param name="width">The minor gridlines color (CSS syntax)</param>
+            <param name="dashType">The minor grid lines dash type</param>
             <example>
                 <code lang="CS">
             &lt;%= Html.Kendo().Chart()
@@ -5886,6 +6506,22 @@
             .CategoryAxis(axis =&gt; axis
             .Categories(s =&gt; s.DateString)
             .Reverse(true)
+            )
+            %&gt;
+            </code>
+            </example>
+        </member>
+        <member name="M:Kendo.Mvc.UI.Fluent.ChartAxisBuilderBase`3.Reverse">
+            <summary>
+            Reverse the axis.
+            </summary>
+            <example>
+                <code lang="CS">
+            &lt;%= Html.Kendo().Chart()
+            .Name("Chart")
+            .CategoryAxis(axis =&gt; axis
+            .Categories(s =&gt; s.DateString)
+            .Reverse()
             )
             %&gt;
             </code>
@@ -6220,6 +6856,12 @@
             </code>
             </example>
         </member>
+        <member name="M:Kendo.Mvc.UI.Fluent.ChartTitleBuilder.Border(System.Action{Kendo.Mvc.UI.Fluent.ChartBorderBuilder})">
+            <summary>
+            Configures the plot area border
+            </summary>
+            <param name="configurator">The border configuration action</param>
+        </member>
         <member name="T:Kendo.Mvc.UI.Fluent.ChartLegendBuilder">
             <summary>
             Defines the fluent interface for configuring the <see cref="T:Kendo.Mvc.UI.ChartLegend" />.
@@ -6404,6 +7046,12 @@
             %&gt;
             </code>
             </example>
+        </member>
+        <member name="M:Kendo.Mvc.UI.Fluent.ChartLegendBuilder.Border(System.Action{Kendo.Mvc.UI.Fluent.ChartBorderBuilder})">
+            <summary>
+            Configures the legend border
+            </summary>
+            <param name="configurator">The border configuration action</param>
         </member>
         <member name="P:Kendo.Mvc.UI.IChart.UrlGenerator">
             <summary>
@@ -6846,6 +7494,111 @@
             </code>
             </example>
         </member>
+        <member name="M:Kendo.Mvc.UI.Fluent.ChartEventBuilder.SelectStart(System.String)">
+            <summary>
+            Defines the name of the JavaScript function that will handle the the SelectStart client-side event.
+            </summary>
+            <param name="onSelectStartHandlerName">The name of the JavaScript function that will handle the event.</param>
+            <example>
+                <code lang="CS">
+            &lt;%= Html.Kendo().Chart()
+            .Name("Chart")
+            .Events(events =&gt; events.SelectStart("onSelectStart"))
+            %&gt;
+            </code>
+            </example>
+        </member>
+        <member name="M:Kendo.Mvc.UI.Fluent.ChartEventBuilder.SelectStart(System.Func{System.Object,System.Object})">
+            <summary>
+            Defines the inline handler of the SelectStart client-side event
+            </summary>
+            <param name="inlineCodeBlock">The handler code wrapped in a text tag (Razor syntax).</param>
+            <example>
+                <code lang="CS">
+            &lt;% Html.Kendo().Chart()
+            .Name("Chart")
+            .Events(events =&gt; events.SelectStart(
+            @&lt;text&gt;
+            function(e) {
+            //event handling code
+            }
+            &lt;/text&gt;
+            ))
+            .Render();
+            %&gt;
+            </code>
+            </example>
+        </member>
+        <member name="M:Kendo.Mvc.UI.Fluent.ChartEventBuilder.Select(System.String)">
+            <summary>
+            Defines the name of the JavaScript function that will handle the the Select client-side event.
+            </summary>
+            <param name="onSelectHandlerName">The name of the JavaScript function that will handle the event.</param>
+            <example>
+                <code lang="CS">
+            &lt;%= Html.Kendo().Chart()
+            .Name("Chart")
+            .Events(events =&gt; events.Select("onSelect"))
+            %&gt;
+            </code>
+            </example>
+        </member>
+        <member name="M:Kendo.Mvc.UI.Fluent.ChartEventBuilder.Select(System.Func{System.Object,System.Object})">
+            <summary>
+            Defines the inline handler of the Select client-side event
+            </summary>
+            <param name="inlineCodeBlock">The handler code wrapped in a text tag (Razor syntax).</param>
+            <example>
+                <code lang="CS">
+            &lt;% Html.Kendo().Chart()
+            .Name("Chart")
+            .Events(events =&gt; events.Select(
+            @&lt;text&gt;
+            function(e) {
+            //event handling code
+            }
+            &lt;/text&gt;
+            ))
+            .Render();
+            %&gt;
+            </code>
+            </example>
+        </member>
+        <member name="M:Kendo.Mvc.UI.Fluent.ChartEventBuilder.SelectEnd(System.String)">
+            <summary>
+            Defines the name of the JavaScript function that will handle the the SelectEnd client-side event.
+            </summary>
+            <param name="onSelectEndHandlerName">The name of the JavaScript function that will handle the event.</param>
+            <example>
+                <code lang="CS">
+            &lt;%= Html.Kendo().Chart()
+            .Name("Chart")
+            .Events(events =&gt; events.SelectEnd("onSelectEnd"))
+            %&gt;
+            </code>
+            </example>
+        </member>
+        <member name="M:Kendo.Mvc.UI.Fluent.ChartEventBuilder.SelectEnd(System.Func{System.Object,System.Object})">
+            <summary>
+            Defines the inline handler of the SelectEnd client-side event
+            </summary>
+            <param name="inlineCodeBlock">The handler code wrapped in a text tag (Razor syntax).</param>
+            <example>
+                <code lang="CS">
+            &lt;% Html.Kendo().Chart()
+            .Name("Chart")
+            .Events(events =&gt; events.SelectEnd(
+            @&lt;text&gt;
+            function(e) {
+            //event handling code
+            }
+            &lt;/text&gt;
+            ))
+            .Render();
+            %&gt;
+            </code>
+            </example>
+        </member>
         <member name="T:Kendo.Mvc.UI.Fluent.ChartBuilder`1">
             <summary>
             Defines the fluent interface for configuring the <see cref="!:Chart{T}" /> component.
@@ -7112,7 +7865,7 @@
             <summary>
             Enables or disables automatic binding.
             </summary>
-            <param name="visible">
+            <param name="autoBind">
             Gets or sets a value indicating if the chart
             should be data bound during initialization.
             The default value is true.
@@ -7963,7 +8716,7 @@
             </summary>
             <typeparam name="TModel">The type of the data item to which the chart is bound to</typeparam>
         </member>
-        <member name="M:Kendo.Mvc.UI.Fluent.ChartCategoryAxisBuilder`1.#ctor(Kendo.Mvc.UI.Chart{`0})">
+        <member name="M:Kendo.Mvc.UI.Fluent.ChartCategoryAxisBuilder`1.#ctor(Kendo.Mvc.UI.Chart{`0},Kendo.Mvc.UI.IChartCategoryAxis)">
             <summary>
             Initializes a new instance of the <see cref="!:ChartCategoryAxisBuilder{TModel}" /> class.
             </summary>
@@ -8045,6 +8798,22 @@
             %&gt;
             </code>
             </example>
+        </member>
+        <member name="M:Kendo.Mvc.UI.Fluent.ChartCategoryAxisBuilder`1.Justify(System.Boolean)">
+            <summary>
+            Positions categories and series points on major ticks. This removes the empty space before and after the series.
+            This option will be ignored if either Bar, Column, OHLC or Candlestick series are plotted on the axis.
+            </summary>
+            <param name="justified">
+            A boolean value that indicates if the empty space before and after the series should be removed.
+            The default value is false.
+            </param>
+        </member>
+        <member name="M:Kendo.Mvc.UI.Fluent.ChartCategoryAxisBuilder`1.Justify">
+            <summary>
+            Positions categories and series points on major ticks. This removes the empty space before and after the series.
+            This option will be ignored if either Bar, Column, OHLC or Candlestick series are plotted on the axis.
+            </summary>
         </member>
         <member name="M:Kendo.Mvc.UI.Html.ChartHtmlBuilder`1.#ctor(Kendo.Mvc.UI.Chart{`0})">
             <summary>
@@ -8343,25 +9112,27 @@
             Name template for auto-generated series when binding to grouped data.
             </summary>
         </member>
+        <member name="P:Kendo.Mvc.UI.ChartSeriesBase`1.Highlight">
+            <summary>
+            Gets or sets the series highlight options
+            </summary>
+        </member>
         <member name="M:Kendo.Mvc.UI.ChartBoundSeries`2.#ctor(System.Linq.Expressions.Expression{System.Func{`0,`1}})">
             <summary>
             Initializes a new instance of the <see cref="!:ChartBoundSeries{TModel, TValue}" /> class.
             </summary>
-            <param name="chart">The chart.</param>
-            <param name="expression">The expression.</param>
+            <param name="expression">The binding expression.</param>
         </member>
         <member name="M:Kendo.Mvc.UI.ChartBoundSeries`2.#ctor(System.Collections.IEnumerable)">
             <summary>
             Initializes a new instance of the <see cref="!:ChartBoundSeries{TModel, TValue}" /> class.
             </summary>
-            <param name="chart">The chart.</param>
-            <param name="data">The data.</param>
+            <param name="data">The series data.</param>
         </member>
         <member name="M:Kendo.Mvc.UI.ChartBoundSeries`2.#ctor">
             <summary>
             Initializes a new instance of the <see cref="!:ChartBoundSeries{TModel, TValue}" /> class.
             </summary>
-            <param name="chart">The chart.</param>
         </member>
         <member name="P:Kendo.Mvc.UI.ChartBoundSeries`2.Data">
             <summary>
@@ -8564,7 +9335,6 @@
             <summary>
             Initializes a new instance of the <see cref="!:ChartLineSeries{TModel, TValue}" /> class.
             </summary>
-            <param name="chart">The chart.</param>
         </member>
         <member name="P:Kendo.Mvc.UI.ChartLineSeries`2.Stacked">
             <summary>
@@ -8643,7 +9413,6 @@
             <summary>
             Initializes a new instance of the <see cref="!:ChartScatterSeries{TModel, TXValue, TYValue}" /> class.
             </summary>
-            <param name="chart">The chart.</param>
         </member>
         <member name="P:Kendo.Mvc.UI.ChartScatterSeries`3.XMember">
             <summary>
@@ -8889,11 +9658,11 @@
             <summary>
             Initializes a new instance of the <see cref="!:ChartOHLCSeries{TModel, TValue}" /> class.
             </summary>
-            <param name="expressionOpen">The open expression.</param>
-            <param name="expressionHigh">The high expression.</param>
-            <param name="expressionLow">The open expression.</param>
-            <param name="expressionClose">The high expression.</param>
-            <param name="expressionColor">The color expression.</param>
+            <param name="openExpression">The open expression.</param>
+            <param name="highExpression">The high expression.</param>
+            <param name="lowExpression">The low expression.</param>
+            <param name="closeExpression">The close expression.</param>
+            <param name="colorExpression">The color expression.</param>
         </member>
         <member name="M:Kendo.Mvc.UI.ChartOHLCSeries`2.#ctor(System.Collections.IEnumerable)">
             <summary>
@@ -9016,12 +9785,12 @@
             <summary>
             Initializes a new instance of the <see cref="!:ChartCandlestickSeries{TModel, TValue}" /> class.
             </summary>
-            <param name="expressionOpen">The open expression.</param>
-            <param name="expressionHigh">The high expression.</param>
-            <param name="expressionLow">The open expression.</param>
-            <param name="expressionClose">The high expression.</param>
-            <param name="expressionColor">The color expression.</param>
-            <param name="expressionDownColor">The downColor expression.</param>
+            <param name="openExpression">The open expression.</param>
+            <param name="highExpression">The high expression.</param>
+            <param name="lowExpression">The low expression.</param>
+            <param name="closeExpression">The close expression.</param>
+            <param name="colorExpression">The color expression.</param>
+            <param name="downColorExpression">The down color expression.</param>
         </member>
         <member name="M:Kendo.Mvc.UI.ChartCandlestickSeries`2.#ctor(System.Collections.IEnumerable)">
             <summary>
@@ -9043,6 +9812,31 @@
         <member name="P:Kendo.Mvc.UI.ChartCandlestickSeries`2.Overlay">
             <summary>
             Gets or sets the effects overlay
+            </summary>
+        </member>
+        <member name="M:Kendo.Mvc.UI.ChartSeriesHighlight.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Kendo.Mvc.UI.ChartSeriesHighlight" /> class.
+            </summary>
+        </member>
+        <member name="P:Kendo.Mvc.UI.ChartSeriesHighlight.Opacity">
+            <summary>
+            Gets or sets the highlight opacity
+            </summary>
+        </member>
+        <member name="P:Kendo.Mvc.UI.ChartSeriesHighlight.Color">
+            <summary>
+            Gets or sets the highlight opacity
+            </summary>
+        </member>
+        <member name="P:Kendo.Mvc.UI.ChartSeriesHighlight.Border">
+            <summary>
+            Gets or sets the highlight border.
+            </summary>
+        </member>
+        <member name="P:Kendo.Mvc.UI.ChartSeriesHighlight.Line">
+            <summary>
+            Gets or sets the highlight line configuration
             </summary>
         </member>
         <member name="P:Kendo.Mvc.UI.IChartCandlestickSeries.DownColorMember">
@@ -9550,6 +10344,11 @@
         <member name="P:Kendo.Mvc.UI.IChartSeries.GroupNameTemplate">
             <summary>
             Name template for auto-generated series when binding to grouped data.
+            </summary>
+        </member>
+        <member name="P:Kendo.Mvc.UI.IChartSeries.Highlight">
+            <summary>
+            Gets or sets the series highlight options
             </summary>
         </member>
         <member name="T:Kendo.Mvc.UI.Fluent.ComboBoxBuilder">
@@ -10211,6 +11010,11 @@
             </summary>
         </member>
         <member name="M:Kendo.Mvc.UI.Fluent.DataSourceAggregateDescriptorFactory`1.Add``1(System.Linq.Expressions.Expression{System.Func{`0,``0}})">
+            <summary>
+            Specifies member on which aggregates to be calculated.
+            </summary>
+        </member>
+        <member name="M:Kendo.Mvc.UI.Fluent.DataSourceAggregateDescriptorFactory`1.Add(System.String,System.Type)">
             <summary>
             Specifies member on which aggregates to be calculated.
             </summary>
@@ -11214,7 +12018,7 @@
             <param name="handler">The handler code wrapped in a text tag (Razor syntax).</param>
             <example>
                 <code lang="CS">
-            &lt;% Html.Kendo().DatePicker()
+            @(Html.Kendo().DatePicker()
             .Name("DatePicker")
             .Events(events =&gt; events.Change(
             @&lt;text&gt;
@@ -11223,8 +12027,7 @@
             }
             &lt;/text&gt;
             ))
-            .Render();
-            %&gt;
+            )
             </code>
             </example>
         </member>
@@ -11235,10 +12038,10 @@
             <param name="handler">The name of the JavaScript function that will handle the event.</param>
             <example>
                 <code lang="CS">
-            &lt;%= Html.Kendo().DatePicker()
+            @(Html.Kendo().DatePicker()
             .Name("DatePicker")
             .Events(events =&gt; events.Change("change"))
-            %&gt;
+            )
             </code>
             </example>
         </member>
@@ -11249,7 +12052,7 @@
             <param name="handler">The handler code wrapped in a text tag (Razor syntax).</param>
             <example>
                 <code lang="CS">
-            &lt;% Html.Kendo().DatePicker()
+            @(Html.Kendo().DatePicker()
             .Name("DatePicker")
             .Events(events =&gt; events.Open(
             @&lt;text&gt;
@@ -11259,8 +12062,7 @@
             }
             &lt;/text&gt;
             ))
-            .Render();
-            %&gt;
+            )
             </code>
             </example>
         </member>
@@ -11271,10 +12073,10 @@
             <param name="handler">The name of the JavaScript function that will handle the event.</param>
             <example>
                 <code lang="CS">
-            &lt;%= Html.Kendo().DatePicker()
+            @(Html.Kendo().DatePicker()
             .Name("DatePicker")
             .Events(events =&gt; events.Open("open"))
-            %&gt;
+            )
             </code>
             </example>
         </member>
@@ -11285,7 +12087,7 @@
             <param name="handler">The handler code wrapped in a text tag (Razor syntax).</param>
             <example>
                 <code lang="CS">
-            &lt;% Html.Kendo().DatePicker()
+            @(Html.Kendo().DatePicker()
             .Name("DatePicker")
             .Events(events =&gt; events.Close(
             @&lt;text&gt;
@@ -11294,8 +12096,7 @@
             }
             &lt;/text&gt;
             ))
-            .Render();
-            %&gt;
+            )
             </code>
             </example>
         </member>
@@ -11306,10 +12107,10 @@
             <param name="handler">The name of the JavaScript function that will handle the event.</param>
             <example>
                 <code lang="CS">
-            &lt;%= Html.Kendo().DatePicker()
+            @(Html.Kendo().DatePicker()
             .Name("DatePicker")
             .Events(events =&gt; events.Close("close"))
-            %&gt;
+            )
             </code>
             </example>
         </member>
@@ -11543,7 +12344,7 @@
             <param name="handler">The handler code wrapped in a text tag (Razor syntax).</param>
             <example>
                 <code lang="CS">
-            &lt;% Html.Kendo().DropDownList()
+            @(Html.Kendo().DropDownList()
             .Name("DropDownList")
             .Events(events =&gt; events.Select(
             @&lt;text&gt;
@@ -11552,7 +12353,7 @@
             }
             &lt;/text&gt;
             ))
-            %&gt;
+            )
             </code>
             </example>
         </member>
@@ -11563,10 +12364,10 @@
             <param name="handler">The name of the JavaScript function that will handle the event.</param>
             <example>
                 <code lang="CS">
-            &lt;%= Html.Kendo().DropDownList()
+            @(Html.Kendo().DropDownList()
             .Name("DropDownList")
             .Events(events =&gt; events.Select("select"))
-            %&gt;
+            )
             </code>
             </example>
         </member>
@@ -11577,7 +12378,7 @@
             <param name="handler">The handler code wrapped in a text tag (Razor syntax).</param>
             <example>
                 <code lang="CS">
-            &lt;% Html.Kendo().DropDownList()
+            @(Html.Kendo().DropDownList()
             .Name("DropDownList")
             .Events(events =&gt; events.Change(
             @&lt;text&gt;
@@ -11586,7 +12387,7 @@
             }
             &lt;/text&gt;
             ))
-            %&gt;
+            )
             </code>
             </example>
         </member>
@@ -11597,10 +12398,10 @@
             <param name="handler">The name of the JavaScript function that will handle the event.</param>
             <example>
                 <code lang="CS">
-            &lt;%= Html.Kendo().DropDownList()
+            @(Html.Kendo().DropDownList()
             .Name("DropDownList")
             .Events(events =&gt; events.Change("change"))
-            %&gt;
+            )
             </code>
             </example>
         </member>
@@ -11611,7 +12412,7 @@
             <param name="handler">The handler code wrapped in a text tag (Razor syntax).</param>
             <example>
                 <code lang="CS">
-            &lt;% Html.Kendo().DropDownList()
+            @(Html.Kendo().DropDownList()
             .Name("DropDownList")
             .Events(events =&gt; events.DataBound(
             @&lt;text&gt;
@@ -11620,7 +12421,7 @@
             }
             &lt;/text&gt;
             ))
-            %&gt;
+            )
             </code>
             </example>
         </member>
@@ -11645,10 +12446,10 @@
             <param name="handler">The name of the JavaScript function that will handle the event.</param>
             <example>
                 <code lang="CS">
-            &lt;%= Html.Kendo().DropDownList()
+            @(Html.Kendo().DropDownList()
             .Name("DropDownList")
             .Events(events =&gt; events.Open("open"))
-            %&gt;
+            )
             </code>
             </example>
         </member>
@@ -11659,7 +12460,7 @@
             <param name="handler">The handler code wrapped in a text tag (Razor syntax).</param>
             <example>
                 <code lang="CS">
-            &lt;% Html.Kendo().DropDownList()
+            @(Html.Kendo().DropDownList()
             .Name("DropDownList")
             .Events(events =&gt; events.Open(
             @&lt;text&gt;
@@ -11668,7 +12469,7 @@
             }
             &lt;/text&gt;
             ))
-            %&gt;
+            )
             </code>
             </example>
         </member>
@@ -11679,7 +12480,7 @@
             <param name="handler">The handler code wrapped in a text tag (Razor syntax).</param>
             <example>
                 <code lang="CS">
-            &lt;% Html.Kendo().DropDownList()
+            @(Html.Kendo().DropDownList()
             .Name("DropDownList")
             .Events(events =&gt; events.Close(
             @&lt;text&gt;
@@ -11688,7 +12489,7 @@
             }
             &lt;/text&gt;
             ))
-            %&gt;
+            )
             </code>
             </example>
         </member>
@@ -11699,10 +12500,10 @@
             <param name="handler">The name of the JavaScript function that will handle the event.</param>
             <example>
                 <code lang="CS">
-            &lt;%= Html.Kendo().DropDownList()
+            @(Html.Kendo().DropDownList()
             .Name("DropDownList")
             .Events(events =&gt; events.Close("close"))
-            %&gt;
+            )
             </code>
             </example>
         </member>
@@ -12151,6 +12952,12 @@
             </code>
             </example>
         </member>
+        <member name="M:Kendo.Mvc.UI.Fluent.GaugeLabelsBuilder`1.Border(System.Action{Kendo.Mvc.UI.Fluent.ChartBorderBuilder})">
+            <summary>
+            Configures the label border
+            </summary>
+            <param name="configurator">The border configuration action</param>
+        </member>
         <member name="M:Kendo.Mvc.UI.Fluent.GaugeLabelsBuilder`1.Format(System.String)">
             <summary>
             Sets the labels format.
@@ -12428,6 +13235,12 @@
             </code>
             </example>
         </member>
+        <member name="M:Kendo.Mvc.UI.Fluent.GaugeAreaBuilder.Border(System.Action{Kendo.Mvc.UI.Fluent.ChartBorderBuilder})">
+            <summary>
+            Configures the gauge area border
+            </summary>
+            <param name="configurator">The border configuration action</param>
+        </member>
         <member name="T:Kendo.Mvc.UI.Fluent.GaugeLinearTrackBuilder">
             <summary>
             Defines the fluent interface for configuring the linear gauge track.
@@ -12508,6 +13321,12 @@
             %&gt;
             </code>
             </example>
+        </member>
+        <member name="M:Kendo.Mvc.UI.Fluent.GaugeLinearTrackBuilder.Border(System.Action{Kendo.Mvc.UI.Fluent.ChartBorderBuilder})">
+            <summary>
+            Configures the track border
+            </summary>
+            <param name="configurator">The border configuration action</param>
         </member>
         <member name="T:Kendo.Mvc.UI.Fluent.GaugeLinearPointerBuilder">
             <summary>
@@ -12609,6 +13428,12 @@
             %&gt;
             </code>
             </example>
+        </member>
+        <member name="M:Kendo.Mvc.UI.Fluent.GaugeLinearPointerBuilder.Border(System.Action{Kendo.Mvc.UI.Fluent.ChartBorderBuilder})">
+            <summary>
+            Configures the pointer border
+            </summary>
+            <param name="configurator">The border configuration action</param>
         </member>
         <member name="M:Kendo.Mvc.UI.Fluent.GaugeLinearPointerBuilder.Opacity(System.Double)">
             <summary>
@@ -13335,6 +14160,50 @@
             <summary>
             The scale reverse.
             </summary>
+        </member>
+        <member name="T:Kendo.Mvc.UI.Fluent.GridBoundColumnFilterableBuilder">
+            <summary>
+            Defines the fluent interface for configuring bound columns filterable options
+            </summary>
+            <typeparam name="T">The type of the data item</typeparam>
+        </member>
+        <member name="M:Kendo.Mvc.UI.Fluent.GridBoundColumnFilterableBuilder.#ctor(Kendo.Mvc.UI.GridBoundColumnFilterableSettings)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Kendo.Mvc.UI.Fluent.GridBoundColumnFilterableBuilder" /> class.
+            </summary>
+            <param name="column">The column.</param>
+        </member>
+        <member name="M:Kendo.Mvc.UI.Fluent.GridBoundColumnFilterableBuilder.UI(Kendo.Mvc.UI.GridFilterUIRole)">
+            <summary>
+            Sets the type of the input element of the filter menu
+            </summary>
+            <example>
+                <code lang="CS">
+            &lt;%= Html.Kendo().Grid(Model)
+            .Name("Grid")
+            .Columns(columns =&gt; columns.Bound(o =&gt; o.OrderDate).Filterable(filterable =&gt; filterable.UI(GridFilterUIRole.DatePicker))
+            %&gt;
+            </code>
+            </example>
+        </member>
+        <member name="M:Kendo.Mvc.UI.Fluent.GridBoundColumnFilterableBuilder.UI(System.Func{System.Object,System.Object})">
+            <summary>
+            Sets JavaScript function which to return additional parameters which to be sent the server.
+            </summary>
+            <example>
+                <code lang="CS">
+            &lt;%= Html.Kendo().Grid(Model)
+            .Name("Grid")
+            .Columns(columns =&gt; columns.Bound(o =&gt; o.OrderDate).Filterable(filterable =&gt; filterable.UI(GridFilterUIRole.DatePicker))
+            %&gt;
+            </code>
+            </example>
+        </member>
+        <member name="M:Kendo.Mvc.UI.Fluent.GridBoundColumnFilterableBuilder.UI(System.String)">
+            <summary>
+            Sets JavaScript function which to return additional parameters which to be sent the server.
+            </summary>
+            <param name="handler">JavaScript function name</param>
         </member>
         <member name="T:Kendo.Mvc.UI.Fluent.ColumnMenuMessagesBuilder">
             <summary>
@@ -15153,6 +16022,24 @@
             </summary>
             <value>The subgroups.</value>
         </member>
+        <member name="T:Kendo.Mvc.UI.SecurityTrimmingBuilder">
+            <summary>
+            Defines the fluent interface for configuring the SecurityTrimming info.
+            </summary>
+        </member>
+        <member name="M:Kendo.Mvc.UI.SecurityTrimmingBuilder.Enabled(System.Boolean)">
+            <summary>
+            Enables or disables security trimming
+            </summary>
+            <remarks>
+            The Enabled method is useful when you need to enable security trimming based on certain conditions.
+            </remarks>
+        </member>
+        <member name="M:Kendo.Mvc.UI.SecurityTrimmingBuilder.HideParent(System.Boolean)">
+            <summary>
+            Enables or disables whether to hide parent item which does not have accessible childrens
+            </summary>
+        </member>
         <member name="T:Kendo.Mvc.UI.Fluent.SliderTooltipBuilder">
             <summary>
             Defines the fluent API for configuring the Kendo Slider for ASP.NET MVC tooltip
@@ -16048,9 +16935,9 @@
             Specifies the pane contents
             </summary>
         </member>
-        <member name="M:Kendo.Mvc.UI.ChartNavigator`1.#ctor">
+        <member name="M:Kendo.Mvc.UI.ChartNavigator`1.#ctor(System.Web.Mvc.ViewContext,Kendo.Mvc.IUrlGenerator)">
             <summary>
-            Initializes a new instance of the <see cref="!:ChartNavigator" /> class.
+            Initializes a new instance of the <see cref="!:ChartNavigator{T}" /> class.
             </summary>
         </member>
         <member name="P:Kendo.Mvc.UI.ChartNavigator`1.Series">
@@ -16058,10 +16945,51 @@
             Gets the navigator series.
             </summary>
         </member>
+        <member name="P:Kendo.Mvc.UI.ChartNavigator`1.Visible">
+            <summary>
+            Gets or sets a value indicating if the navigator is visible.
+            </summary>
+        </member>
         <member name="P:Kendo.Mvc.UI.ChartNavigator`1.Select">
             <summary>
             Gets or sets the navigator selection.
             </summary>
+        </member>
+        <member name="P:Kendo.Mvc.UI.ChartNavigator`1.Hint">
+            <summary>
+            Gets or sets the navigator hint.
+            </summary>
+        </member>
+        <member name="P:Kendo.Mvc.UI.ChartNavigator`1.ViewContext">
+            <summary>
+            Gets or sets the view context to rendering a view.
+            </summary>
+            <value>The view context.</value>
+        </member>
+        <member name="P:Kendo.Mvc.UI.ChartNavigator`1.UrlGenerator">
+            <summary>
+            Gets or sets the URL generator.
+            </summary>
+            <value>The URL generator.</value>
+        </member>
+        <member name="P:Kendo.Mvc.UI.ChartNavigator`1.DataSource">
+            <summary>
+            Gets the data source configuration.
+            </summary>
+        </member>
+        <member name="P:Kendo.Mvc.UI.ChartNavigator`1.AutoBind">
+            <summary>
+            Gets or sets a value indicating if the chart
+            should be data bound during initialization.
+            </summary>
+        </member>
+        <member name="P:Kendo.Mvc.UI.ChartNavigator`1.DateField">
+            <summary>
+            Gets or sets the date field.
+            </summary>
+            <value>
+            The date field.
+            </value>
         </member>
         <member name="M:Kendo.Mvc.UI.ChartDateSelection.#ctor">
             <summary>
@@ -16078,22 +17006,100 @@
             The upper boundary of the range.
             </summary>
         </member>
+        <member name="T:Kendo.Mvc.UI.Fluent.ChartNavigatorHintBuilder">
+            <summary>
+            Defines the fluent interface for configuring <see cref="!:ChartNavigatorhintBuilder" />.
+            </summary>
+        </member>
+        <member name="M:Kendo.Mvc.UI.Fluent.ChartNavigatorHintBuilder.#ctor(Kendo.Mvc.UI.ChartNavigatorHint)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Kendo.Mvc.UI.ChartNavigatorHint" /> class.
+            </summary>
+            <param name="navigatorHint">The navigator hint.</param>
+        </member>
+        <member name="M:Kendo.Mvc.UI.Fluent.ChartNavigatorHintBuilder.Format(System.String)">
+            <summary>
+            Sets the border color.
+            </summary>
+            <param name="color">The border color (CSS format).</param>
+            <example>
+                <code lang="CS">
+            &lt;%= Html.Kendo().StockChart(Model)
+            .Name("Chart")
+            .Navigator(nav =&gt; nav
+            .Series(series =&gt;
+            {
+            series.Bar(s =&gt; s.SalesAmount);
+            })
+            .Hint(hint =&gt; hint
+            .Format("{0:d} | {1:d}")
+            )
+            )
+            %&gt;
+            </code>
+            </example>
+        </member>
+        <member name="M:Kendo.Mvc.UI.Fluent.ChartNavigatorHintBuilder.Template(System.String)">
+            <summary>
+            Sets the border opacity
+            </summary>
+            <param name="opacity">The border opacity (CSS format).</param>
+            <example>
+                <code lang="CS">
+            &lt;%= Html.Kendo().StockChart(Model)
+            .Name("Chart")
+            .Navigator(nav =&gt; nav
+            .Series(series =&gt;
+            {
+            series.Bar(s =&gt; s.SalesAmount);
+            })
+            .Hint(hint =&gt; hint
+            .Template("From: #= from # To: #= to #")
+            )
+            )
+            %&gt;
+            </code>
+            </example>
+        </member>
+        <member name="M:Kendo.Mvc.UI.Fluent.ChartNavigatorHintBuilder.Visible(System.Boolean)">
+            <summary>
+            Sets the hint visibility.
+            </summary>
+            <param name="visible">The hint visibility.</param>
+            <example>
+                <code lang="CS">
+            &lt;%= Html.Kendo().StockChart(Model)
+            .Name("Chart")
+            .Navigator(nav =&gt; nav
+            .Series(series =&gt;
+            {
+            series.Bar(s =&gt; s.SalesAmount);
+            })
+            .Hint(hint =&gt; hint
+            .Visible(false)
+            )
+            )
+            %&gt;
+            </code>
+            </example>
+        </member>
         <member name="T:Kendo.Mvc.UI.Fluent.ChartNavigatorBuilder`1">
             <summary>
-            Defines the fluent interface for configuring the <see cref="!:ChartNavigator" />.
+            Defines the fluent interface for configuring the <see cref="!:ChartNavigator{T}" />.
             </summary>
         </member>
         <member name="M:Kendo.Mvc.UI.Fluent.ChartNavigatorBuilder`1.#ctor(Kendo.Mvc.UI.ChartNavigator{`0})">
             <summary>
-            Initializes a new instance of the <see cref="!:ChartNavigatorBuilder" /> class.
+            Initializes a new instance of the <see cref="!:ChartNavigatorBuilder{T}" /> class.
             </summary>
-            <param name="chartTitle">The stock chart navigator.</param>
+            <param name="chartNavigator">The stock chart navigator.</param>
         </member>
         <member name="M:Kendo.Mvc.UI.Fluent.ChartNavigatorBuilder`1.Select(System.Nullable{System.DateTime},System.Nullable{System.DateTime})">
             <summary>
             Sets the selection range
             </summary>
-            <param name="text">The selection range.</param>
+            <param name="from">The selection range start.</param>
+            <param name="to">The selection range end.</param>
             <example>
                 <code lang="CS">
             &lt;%= Html.Kendo().StockChart(Model)
@@ -16122,6 +17128,105 @@
             </code>
             </example>
         </member>
+        <member name="M:Kendo.Mvc.UI.Fluent.ChartNavigatorBuilder`1.Visible(System.Boolean)">
+            <summary>
+            Sets the navigator visibility
+            </summary>
+            <param name="visible">The navigator visibility.</param>
+            <example>
+                <code lang="CS">
+            &lt;%= Html.Kendo().StockChart(Model)
+            .Name("Chart")
+            .Navigator(nav =&gt; nav
+            .Series(series =&gt;
+            {
+            series.Bar(s =&gt; s.SalesAmount);
+            })
+            .Visible(false)
+            )
+            %&gt;
+            </code>
+            </example>
+        </member>
+        <member name="M:Kendo.Mvc.UI.Fluent.ChartNavigatorBuilder`1.Hint(System.Action{Kendo.Mvc.UI.Fluent.ChartNavigatorHintBuilder})">
+            <summary>
+            Defines the navigator hint.
+            </summary>
+            <param name="configurator">The add action.</param>
+            <example>
+                <code lang="CS">
+            &lt;%= Html.Kendo().StockChart(Model)
+            .Name("Chart")
+            .Navigator(nav =&gt;
+            nav.Series(series =&gt;
+            {
+            series.Bar(s =&gt; s.SalesAmount);
+            })
+            )
+            %&gt;
+            </code>
+            </example>
+        </member>
+        <member name="M:Kendo.Mvc.UI.Fluent.ChartNavigatorBuilder`1.DataSource(System.Action{Kendo.Mvc.UI.Fluent.ReadOnlyAjaxDataSourceBuilder{`0}})">
+            <summary>
+            Data Source configuration for the Navigator.
+            When configured, the Navigator will filter the main StockChart data source to the selected range.
+            </summary>
+            <param name="configurator">Use the configurator to set different data binding options.</param>
+            <example>
+                <code lang="CS">
+            &lt;%= Html.Kendo().StockChart()
+            .Name("Chart")
+            .Navigator(navi =&gt; navi
+            .DataSource(ds =&gt;
+            {
+            ds.Ajax().Read(r =&gt; r.Action("SalesData", "Chart"));
+            })
+            )
+            %&gt;
+            </code>
+            </example>
+        </member>
+        <member name="M:Kendo.Mvc.UI.Fluent.ChartNavigatorBuilder`1.DateField(System.String)">
+            <summary>
+            Sets the field used by the navigator date axes.
+            </summary>
+            <param name="dateField">The date field.</param>
+            <example>
+                <code lang="CS">
+            &lt;%= Html.Kendo().StockChart(Model)
+            .Name("Chart")
+            .Navigator(navi =&gt; navi
+            .DateField("Date")
+            )
+            %&gt;
+            </code>
+            </example>
+        </member>
+        <member name="M:Kendo.Mvc.UI.Fluent.ChartNavigatorBuilder`1.AutoBind(System.Boolean)">
+            <summary>
+            Enables or disables automatic binding.
+            </summary>
+            <param name="autoBind">
+            Gets or sets a value indicating if the navigator
+            should be data bound during initialization.
+            The default value is true.
+            </param>
+            <example>
+                <code lang="CS">
+            &lt;%= Html.Kendo().StockChart()
+            .Name("Chart")
+            .Navigator(navi =&gt; navi
+            .DataSource(ds =&gt;
+            {
+            ds.Ajax().Read(r =&gt; r.Action("SalesData", "Chart"));
+            })
+            .AutoBind(false)
+            )
+            %&gt;
+            </code>
+            </example>
+        </member>
         <member name="T:Kendo.Mvc.UI.Fluent.StockChartBuilder`1">
             <summary>
             Defines the fluent interface for configuring the <see cref="!:Chart{T}" /> component.
@@ -16137,12 +17242,34 @@
             <summary>
             Sets the field used by all date axes (including the navigator).
             </summary>
-            <param name="theme">The date field.</param>
+            <param name="dateField">The date field.</param>
             <example>
                 <code lang="CS">
             &lt;%= Html.Kendo().StockChart(Model)
             .Name("Chart")
             .DateField("Date")
+            %&gt;
+            </code>
+            </example>
+        </member>
+        <member name="M:Kendo.Mvc.UI.Fluent.StockChartBuilder`1.AutoBind(System.Boolean)">
+            <summary>
+            Enables or disables automatic binding.
+            </summary>
+            <param name="autoBind">
+            Gets or sets a value indicating if the chart
+            should be data bound during initialization.
+            The default value is true.
+            </param>
+            <example>
+                <code lang="CS">
+            &lt;%= Html.Kendo().StockChart()
+            .Name("Chart")
+            .DataSource(ds =&gt;
+            {
+            ds.Ajax().Read(r =&gt; r.Action("SalesData", "Chart"));
+            })
+            .AutoBind(false)
             %&gt;
             </code>
             </example>
@@ -16494,6 +17621,32 @@
             %&gt;
             </code>
             </example>
+        </member>
+        <member name="M:Kendo.Mvc.UI.ChartNavigatorHint.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="!:NavigatorHint" /> class.
+            </summary>
+        </member>
+        <member name="P:Kendo.Mvc.UI.ChartNavigatorHint.Format">
+            <summary>
+            Gets or sets the hint format.
+            </summary>
+            <value>
+            The hint format.
+            </value>
+        </member>
+        <member name="P:Kendo.Mvc.UI.ChartNavigatorHint.Template">
+            <summary>
+            Gets or sets the hint template.
+            </summary>
+            <value>
+            The hint template.
+            </value>
+        </member>
+        <member name="P:Kendo.Mvc.UI.ChartNavigatorHint.Visible">
+            <summary>
+            Gets or sets a value indicating if the hint is visible
+            </summary>
         </member>
         <member name="P:Kendo.Mvc.UI.StockChart`1.Navigator">
             <summary>
@@ -17788,7 +18941,7 @@
             <param name="handler">The handler code wrapped in a text tag (Razor syntax).</param>
             <example>
                 <code lang="CS">
-            &lt;% Html.Kendo().NumericTextBox()
+            @(Html.Kendo().NumericTextBox()
             .Name("NumericTextBox")
             .Events(events =&gt; events.Change(
             @&lt;text&gt;
@@ -17797,8 +18950,7 @@
             }
             &lt;/text&gt;
             ))
-            .Render();
-            %&gt;
+            )
             </code>
             </example>
         </member>
@@ -17809,10 +18961,10 @@
             <param name="handler">The name of the JavaScript function that will handle the event.</param>
             <example>
                 <code lang="CS">
-            &lt;%= Html.Kendo().NumericTextBox()
+            @(Html.Kendo().NumericTextBox()
             .Name("NumericTextBox")
             .Events(events =&gt; events.Change("change"))
-            %&gt;
+            )
             </code>
             </example>
         </member>
@@ -17823,7 +18975,7 @@
             <param name="handler">The handler code wrapped in a text tag (Razor syntax).</param>
             <example>
                 <code lang="CS">
-            &lt;% Html.Kendo().NumericTextBox()
+            @(Html.Kendo().NumericTextBox()
             .Name("NumericTextBox")
             .Events(events =&gt; events.Spin(
             @&lt;text&gt;
@@ -17832,8 +18984,7 @@
             }
             &lt;/text&gt;
             ))
-            .Render();
-            %&gt;
+            )
             </code>
             </example>
         </member>
@@ -17844,10 +18995,10 @@
             <param name="handler">The name of the JavaScript function that will handle the event.</param>
             <example>
                 <code lang="CS">
-            &lt;%= Html.Kendo().NumericTextBox()
+            @(Html.Kendo().NumericTextBox()
             .Name("NumericTextBox")
             .Events(events =&gt; events.Spin("spin"))
-            %&gt;
+            )
             </code>
             </example>
         </member>
@@ -18463,6 +19614,23 @@
             &lt;%= Html.Kendo().TreeView()
             .Name("TreeView")
             .SecurityTrimming(false)
+            %&gt;
+            </code>
+            </example>
+        </member>
+        <member name="M:Kendo.Mvc.UI.Fluent.TreeViewBuilder.SecurityTrimming(System.Action{Kendo.Mvc.UI.SecurityTrimmingBuilder})">
+            <summary>
+            Defines the security trimming functionality of the component
+            </summary>
+            <param name="securityTrimmingAction">The securityTrimming action.</param>
+            <example>
+                <code lang="CS">
+            &lt;%= Html.Kendo().TreeView()
+            .Name("TreeView")
+            .SecurityTrimming(builder =&gt;
+            {
+            builder.Enabled(true).HideParent(true);
+            })
             %&gt;
             </code>
             </example>
@@ -19930,13 +21098,13 @@
             Defines the fluent interface for configuring <see cref="!:Grid{T}.Filterable" />.
             </summary>
         </member>
-        <member name="M:Kendo.Mvc.UI.Fluent.GridFilterableSettingsBuilder.#ctor(Kendo.Mvc.UI.GridFilterableSettings)">
+        <member name="M:Kendo.Mvc.UI.Fluent.GridFilterableSettingsBuilderBase`1.#ctor(Kendo.Mvc.UI.GridFilterableSettings)">
             <summary>
             Initializes a new instance of the <see cref="T:Kendo.Mvc.UI.GridFilterableSettings" /> class.
             </summary>
             <param name="settings">The settings.</param>
         </member>
-        <member name="M:Kendo.Mvc.UI.Fluent.GridFilterableSettingsBuilder.Enabled(System.Boolean)">
+        <member name="M:Kendo.Mvc.UI.Fluent.GridFilterableSettingsBuilderBase`1.Enabled(System.Boolean)">
             <summary>
             Enables or disables filtering
             </summary>
@@ -19952,14 +21120,14 @@
             The Enabled method is useful when you need to enable filtering based on certain conditions.
             </remarks>
         </member>
-        <member name="M:Kendo.Mvc.UI.Fluent.GridFilterableSettingsBuilder.Operators(System.Action{Kendo.Mvc.UI.Fluent.FilterableOperatorsBuilder})">
+        <member name="M:Kendo.Mvc.UI.Fluent.GridFilterableSettingsBuilderBase`1.Operators(System.Action{Kendo.Mvc.UI.Fluent.FilterableOperatorsBuilder})">
             <summary>
             Configures the Filter menu operators.
             </summary>
             <returns>
             </returns>
         </member>
-        <member name="M:Kendo.Mvc.UI.Fluent.GridFilterableSettingsBuilder.Messages(System.Action{Kendo.Mvc.UI.Fluent.FilterableMessagesBuilder})">
+        <member name="M:Kendo.Mvc.UI.Fluent.GridFilterableSettingsBuilderBase`1.Messages(System.Action{Kendo.Mvc.UI.Fluent.FilterableMessagesBuilder})">
             <summary>
             Configures Filter menu messages.
             </summary>
@@ -19968,7 +21136,7 @@
             <returns>
             </returns>
         </member>
-        <member name="M:Kendo.Mvc.UI.Fluent.GridFilterableSettingsBuilder.Extra(System.Boolean)">
+        <member name="M:Kendo.Mvc.UI.Fluent.GridFilterableSettingsBuilderBase`1.Extra(System.Boolean)">
             <summary>
             Specify if the extra input fields should be visible within the filter menu. Default is true.
             </summary>
@@ -21751,6 +22919,23 @@
             </code>
             </example>
         </member>
+        <member name="M:Kendo.Mvc.UI.Fluent.MenuBuilder.SecurityTrimming(System.Action{Kendo.Mvc.UI.SecurityTrimmingBuilder})">
+            <summary>
+            Defines the security trimming functionality of the component
+            </summary>
+            <param name="securityTrimmingAction">The securityTrimming action.</param>
+            <example>
+                <code lang="CS">
+            &lt;%= Html.Kendo().Menu()
+            .Name("Menu")
+            .SecurityTrimming(builder =&gt;
+            {
+            builder.Enabled(true).HideParent(true);
+            })
+            %&gt;
+            </code>
+            </example>
+        </member>
         <member name="T:Kendo.Mvc.UI.MenuItem">
             <summary>
             Represents an item from Kendo Menu for ASP.NET MVC
@@ -22648,6 +23833,23 @@
             &lt;%= Html.Kendo().PanelBar()
             .Name("PanelBar")
             .SecurityTrimming(false)
+            %&gt;
+            </code>
+            </example>
+        </member>
+        <member name="M:Kendo.Mvc.UI.Fluent.PanelBarBuilder.SecurityTrimming(System.Action{Kendo.Mvc.UI.SecurityTrimmingBuilder})">
+            <summary>
+            Defines the security trimming functionality of the component
+            </summary>
+            <param name="securityTrimmingAction">The securityTrimming action.</param>
+            <example>
+                <code lang="CS">
+            &lt;%= Html.Kendo().PanelBar()
+            .Name("PanelBar")
+            .SecurityTrimming(builder =&gt;
+            {
+            builder.Enabled(true).HideParent(true);
+            })
             %&gt;
             </code>
             </example>
@@ -23559,7 +24761,7 @@
             <summary>
             Initializes a new instance of the <see cref="T:Kendo.Mvc.UI.Fluent.UploadMessagesBuilder" /> class.
             </summary>
-            <param name="asyncSettings">The messages.</param>
+            <param name="messages">The messages.</param>
             <example>
                 <code lang="CS">
             &lt;%= Html.Kendo().Upload()
@@ -24571,7 +25773,8 @@
             <summary>
             Serializes the asynchronous uploading settings to the writer.
             </summary>
-            <param name="writer">The writer object.</param>
+            <param name="key">The serialization key.</param>
+            <param name="options">The target dictionary.</param>
         </member>
         <member name="M:Kendo.Mvc.UI.Upload.#ctor(System.Web.Mvc.ViewContext,Kendo.Mvc.Infrastructure.IJavaScriptInitializer,Kendo.Mvc.IUrlGenerator)">
             <summary>
@@ -25103,7 +26306,7 @@
             Creates a new <see cref="!:Kendo.Mvc.UI.Chart{T}" /> bound an item in ViewData.
             </summary>
             <typeparam name="T">Type of the data item</typeparam>
-            <param name="dataSourceViewDataKey">The data source view data key.</param>
+            <param name="dataViewDataKey">The data source view data key.</param>
             <example>
                 <code lang="CS">
             &lt;%= Html.Kendo().Chart&lt;SalesData&gt;("sales")
@@ -25157,7 +26360,7 @@
             Creates a new <see cref="!:Kendo.Mvc.UI.StockChart{T}" /> bound an item in ViewData.
             </summary>
             <typeparam name="T">Type of the data item</typeparam>
-            <param name="dataSourceViewDataKey">The data source view data key.</param>
+            <param name="dataViewDataKey">The data source view data key.</param>
             <example>
                 <code lang="CS">
             &lt;%= Html.Kendo().StockChart&lt;SalesData&gt;("sales")
@@ -25180,6 +26383,13 @@
             %&gt;
             </code>
             </example>
+        </member>
+        <member name="M:Kendo.Mvc.UI.Fluent.WidgetFactory.DeferredScripts">
+            <summary>
+            Returns the initialization scripts for widgets set as deferred
+            </summary>
+            <returns>
+            </returns>
         </member>
         <member name="M:Kendo.Mvc.UI.Fluent.WidgetFactory`1.EditorFor(System.Linq.Expressions.Expression{System.Func{`0,System.String}})">
             <summary>
@@ -25831,6 +27041,12 @@
             <summary>
             Defines the fluent interface for configuring the <see cref="T:Kendo.Mvc.UI.Window" /> component.
             </summary>
+        </member>
+        <member name="M:Kendo.Mvc.UI.Fluent.WindowBuilder.Title(System.Boolean)">
+            <summary>
+            Allows title to be shown / hidden
+            </summary>
+            <param name="show">Whether the window title will be visible</param>
         </member>
         <member name="M:Kendo.Mvc.UI.Fluent.WindowBuilder.Title(System.String)">
             <summary>
@@ -26629,6 +27845,12 @@
             Sets the name of the component.
             </summary>
             <param name="componentName">The name.</param>
+            <returns>
+            </returns>
+        </member>
+        <member name="M:Kendo.Mvc.UI.Fluent.WidgetBuilderBase`2.Deferred">
+            <summary>
+            Suppress initialization script rendering. Note that this options should be used in conjunction with <see cref="M:Kendo.Mvc.UI.Fluent.WidgetFactory.DeferredScripts" /></summary>
             <returns>
             </returns>
         </member>
