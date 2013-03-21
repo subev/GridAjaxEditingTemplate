@@ -40,7 +40,7 @@ namespace KendoMVCWrappers.Controllers
                 TryUpdateModel(toUpdate);
             }
 
-            return Json(ModelState.ToDataSourceResult());
+            return Json(new Person[] { person }.ToDataSourceResult(dsRequest, ModelState));
         }
 
         public ActionResult About()
