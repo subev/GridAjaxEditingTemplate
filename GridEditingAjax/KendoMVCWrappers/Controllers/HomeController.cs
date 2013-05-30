@@ -47,6 +47,20 @@ namespace KendoMVCWrappers.Controllers
             return Json(new Person[] { person }.ToDataSourceResult(dsRequest, ModelState));
         }
 
+        public ActionResult CreatePerson([DataSourceRequest] DataSourceRequest dsRequest, [Bind(Prefix = "models")]List<Person> created)
+        {
+            if (people != null && ModelState.IsValid)
+            {
+                foreach (var person in created)
+                {
+                    person.PersonID = people.Count + 1;
+                    people.Add(person);
+                }
+            }
+
+            return Json(created.ToDataSourceResult(dsRequest, ModelState));
+        }
+
         public ActionResult About()
         {
             ViewBag.Message = "Your quintessential app description page.";

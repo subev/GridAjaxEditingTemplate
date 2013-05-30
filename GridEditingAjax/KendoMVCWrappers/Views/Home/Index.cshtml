@@ -12,8 +12,12 @@
             .Batch(true)
             .Read(read => read.Action("GetPeople","Home"))
             .Update(up=>up.Action("UpdatePerson","Home"))
+            .Create(up => up.Action("CreatePerson", "Home"))
     )
-    .ToolBar(tb=>tb.Save())
+    .ToolBar(tb=>{
+        tb.Save();
+        tb.Create();
+    })
     .Columns(columns =>
     {
 	columns.Bound(c => c.PersonID);
