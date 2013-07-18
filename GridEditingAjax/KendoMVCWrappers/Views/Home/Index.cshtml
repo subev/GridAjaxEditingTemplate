@@ -22,7 +22,7 @@
     {
 	columns.Bound(c => c.PersonID);
 	columns.Bound(c => c.Name);
-	columns.Bound(c => c.BirthDate);
+	columns.Bound(c => c.BirthDate).Format("{0:dd/MM/yyyy}");
     })
     .Editable(ed=>ed.Mode(GridEditMode.InCell))
     .Pageable()

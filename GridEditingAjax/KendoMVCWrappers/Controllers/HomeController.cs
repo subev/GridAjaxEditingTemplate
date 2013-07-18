@@ -44,7 +44,7 @@ namespace KendoMVCWrappers.Controllers
                 }
             }
 
-            return Json(new Person[] { person }.ToDataSourceResult(dsRequest, ModelState));
+            return Json(updated.ToDataSourceResult(dsRequest, ModelState));
         }
 
         public ActionResult CreatePerson([DataSourceRequest] DataSourceRequest dsRequest, [Bind(Prefix = "models")]List<Person> created)
