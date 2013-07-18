@@ -13,6 +13,7 @@
     {
         columns.Bound(c => c.PersonID);
         columns.Bound(c => c.Name);
+        columns.Bound(c => c.BirthDate).Format("{0:dd/MM/yyyy}");
         columns.Command(cmd => cmd.Edit());
     })            
     .Pageable()
