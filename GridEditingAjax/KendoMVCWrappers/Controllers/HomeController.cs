@@ -15,8 +15,8 @@ namespace KendoMVCWrappers.Controllers
 
         static HomeController()
         {
-            people.Add(new Person { PersonID = 1, Name = "John", BirthDate = new DateTime(1968, 6, 26) });
-            people.Add(new Person { PersonID = 2, Name = "Sara", BirthDate = new DateTime(1974, 9, 13) });
+            people.Add(new Person { PersonID = 1, Name = "John", BirthDate = new DateTime(new DateTime(1968, 6, 26).Ticks,DateTimeKind.Utc) });
+            people.Add(new Person { PersonID = 2, Name = "Sara", BirthDate = new DateTime(new DateTime(1974, 9, 13).Ticks,DateTimeKind.Utc) });
         }
 
         public ActionResult Index()

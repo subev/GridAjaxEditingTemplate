@@ -5,6 +5,8 @@
 @(Html.Kendo().Grid<KendoMVCWrappers.Models.Person>().Name("people")
     .DataSource(dataSource => dataSource
         .Ajax()
+        .Events(ev => ev.RequestEnd("parseDates"))
+        .ServerOperation(false)
         .Model(model=>model.Id(m=>m.PersonID))
             .Read(read => read.Action("GetPeople","Home"))
             .Update(up=>up.Action("UpdatePerson","Home"))
@@ -13,9 +15,27 @@
     {
         columns.Bound(c => c.PersonID);
         columns.Bound(c => c.Name);
-        columns.Bound(c => c.BirthDate).Format("{0:dd/MM/yyyy}");
-        columns.Command(cmd => cmd.Edit());
-    })            
+        columns.Bound(c => c.BirthDate);
+        columns.Command(cmd => cmd.Edit());        
+    })  
+    .Filterable()          
+    .Editable(ed=>ed.Mode(GridEditMode.PopUp).Window(wnd=>wnd.Title("Fooo").Width(900).Height(900)))
     .Pageable()
     .Sortable()
 )
+
+
+    <script>
+        function parseDates(e) {
+            if(e.type=="read"){
+                var offsetMiliseconds = new Date().getTimezoneOffset() * 60000;
+
+                var data = e.response.Data;
+                for (var i = 0; i < data.length; i++) {
+                    data[i].BirthDate = data[i].BirthDate.replace(/\d+/,
+                        function (n) { return parseInt(n) + offsetMiliseconds }
+                    );
+                }
+            }
+        }
+    </script>
