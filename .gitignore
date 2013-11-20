@@ -2,3 +2,4 @@
 *.zip
 bin/
 obj/
+GridEditingAjax/KendoMVCWrappers/Scripts/kendo/src/
